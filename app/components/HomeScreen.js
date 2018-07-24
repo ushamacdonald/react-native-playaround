@@ -7,6 +7,10 @@ class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>This is the home screen</Text>
+        <Button
+          title="Back to the start"
+          onPress={() => this.props.navigation.popToTop()}
+        />
       </View>
     );
   }
