@@ -6,6 +6,7 @@ import { createStackNavigator } from 'react-navigation';
 import store from '../store';
 
 import MainScreen from './MainScreen';
+import HomeScreen from './HomeScreen';
 
 export default class App extends React.Component {
   render() {
@@ -14,5 +15,6 @@ export default class App extends React.Component {
 }
 
 const MainStack = createStackNavigator({
-  Main: MainScreen
+  Main: MainScreen,
+  Home: HomeScreen
 });
