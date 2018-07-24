@@ -5,38 +5,14 @@ import { createStackNavigator } from 'react-navigation';
 
 import store from '../store';
 
-class NavigationScreen extends React.Component {
+import MainScreen from './MainScreen';
+
+export default class App extends React.Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-      </View>
-    );
+    return <MainStack />;
   }
 }
 
-export default createStackNavigator({
-  Navigation: {
-    screen: NavigationScreen
-  }
-});
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
+const MainStack = createStackNavigator({
+  Main: MainScreen
 });
