@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, Button } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
+import MultiSlider from '@ptomasroos/react-native-multi-slider';
+
 class HomeScreen extends React.Component {
   render() {
     return (
@@ -10,6 +12,14 @@ class HomeScreen extends React.Component {
         <Button
           title="Back to the start"
           onPress={() => this.props.navigation.popToTop()}
+        />
+
+        <MultiSlider
+          // values={}
+          sliderLength={280}
+          // onValuesChangeStart={}
+          // onValuesChange={}
+          // onValuesChangeFinish={}
         />
       </View>
     );
