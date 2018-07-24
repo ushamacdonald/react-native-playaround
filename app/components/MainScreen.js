@@ -3,6 +3,10 @@ import { Platform, StyleSheet, Text, View, Button } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
 class MainScreen extends React.Component {
+  static navigationOptions = {
+    header: null
+  };
+
   render() {
     return (
       <View style={styles.container}>
